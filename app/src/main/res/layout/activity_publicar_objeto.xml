@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PublicarObjetoActivity">
+
+    <TextView
+        android:id="@+id/txtTituloPublicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:text="Categoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPublicar"
+        android:layout_width="161dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="396dp"
+        android:text="Publicar objeto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloPublicar" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCategoria"
+        android:layout_width="234dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="196dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioRopa"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Ropa" />
+
+        <RadioButton
+            android:id="@+id/radioLibro"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:text="Libro" />
+
+        <RadioButton
+            android:id="@+id/radioTecnologia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tecnologia" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editNombreObjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Nombre del objeto"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTituloPublicar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
